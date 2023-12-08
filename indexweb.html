@@ -1,0 +1,385 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Teko&family=Vollkorn+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="/styleweb.css">
+    <style>
+        html {
+            background: linear-gradient(245.59deg, #8e8e8e 0%, #4b4b4b 28.53%, #282828 75.29%);
+            text-transform: capitalize;
+            scroll-behavior: smooth;
+        }
+        header {
+            font-family: 'volkorn SC';
+            background-position: center;
+            min-height: 1100px;
+            display: flex;
+        }
+        header nav {
+            text-decoration: none;
+            font-size: 30px;
+            color: black;     
+        }
+
+        @media screen and(max-width: 670px){
+            header {
+                min-height: 500px;
+            }
+        }
+        header a:hover {
+            font-size: 20px;
+            font-weight: 100;
+            text-shadow: 0 0 20px rgb(235, 235, 235), 0 0 40px rgb(189, 71, 71), 0 0 60px black;
+        }
+
+        .video-background  {
+           position: absolute;
+           bottom: 0;
+           top: 0; 
+           z-index: -1;
+        }
+
+        .section {
+            padding: 2vw;
+            padding-bottom: 4vw;
+        }
+
+        .class.class {
+            font-family: 'volkcorn SC';
+        
+        }
+   
+        .row h2 {
+            font-weight: 500;
+            
+        }
+
+        .row h2:hover {
+            font-weight: 700;
+            text-shadow: 0 0 20px rgb(43, 43, 43), 0 0 40px rgb(227, 227, 227), 0 0 60px rgb(74, 74, 74);
+        } 
+
+        .about h1 {
+            text-align: center;
+            color: black;
+            font-size: 10rem;
+            font-family: 'volkcorn SC';
+            text-transform: capitalize;
+            font-weight: 600;
+            padding-bottom: 3rem;
+        }
+
+        .about h1:hover {
+            font-size: 12rem;
+            font-weight: 600;
+            color: black;
+            margin-bottom: 10px;
+            text-shadow: 0 0 20px rgb(235, 235, 235), 0 0 40px rgb(191, 107, 107) 0 0 60px black;
+        }
+
+        .about p {
+            font-size: 26px;
+            color: white;
+        }
+
+        .about p:hover {
+            font-size: 30px;
+            font-weight: 30;
+        }
+
+        .class h1{
+            font-size: 10rem;
+            font-weight: 500;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+
+        .class h1:hover {
+            font-size: 12rem;
+            font-weight: 560;
+        }
+
+       .hero .hero {
+        padding: 20px;
+        border: 20px solid white;
+        border-style: groove;
+
+       }
+       footer .contact{
+        position: relative;
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       }
+
+       footer .rights{
+            background-color: black;
+            padding: 10px;
+            text-align: center;
+            color: white;
+       }
+
+       footer p:nth-child(1) {
+            font-size: 30px;
+            color: white;
+            margin-bottom: 10px;
+            font-weight: bold;
+       }
+       footer p:nth-child(2) {
+        color: white;
+        font-size: 17px;
+        width: 500px;
+        text-align: center;
+        line-height: 26px;
+       }
+
+       .social {
+        display: flex;
+       }
+
+       .social a {
+        width: 45px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin: 22px 10px;
+        background-color: white;
+        text-decoration: none;
+        font-size: 20px;
+       }
+
+       .social a:hover {
+        transform: scale(1.3);
+        transition: .3s;
+       }
+
+       .contact {
+        width: 100%;
+        height: 290px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 30px;
+       }
+
+       .contact p {
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        font-size: 4rem;
+       }
+
+       .contact .button-two {
+
+        color: white;
+        text-decoration: none;
+        border: 2px solid white;
+        font-weight: bold;
+        padding: 13px 30px;
+        border-radius: 30%;
+        transition: .4s;
+       }
+
+       .contact .button-two:hover{
+        background-color: white;
+        border: 2px solid transparent;
+        cursor: pointer;
+
+       }
+
+
+    
+    </style>
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <nav class="nav wrapper black">
+            <div class="container home">
+               <img src="img/logo.png" alt="">
+                <a href="#" class="sidenav-trigger" data-target="mobile menu">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#class">Class</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                </ul>
+                <ul class="sidenav grey lighten-2" id="mobile-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Class</a></li>
+                    <li><a href="#">Class</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>               
+         
+        </div>
+        <video src="img/video.mp4" class="video-background"
+                    autoplay
+                    loop
+                    muted
+                    play-lined
+                ></video>
+
+
+    </header>
+
+    
+    </section>
+        </div>
+    </section>
+    <!--About-->
+    <section class="container section scrollSpy">
+        <div class="about" id="about">
+            <h1>About</h1>
+            <div class="row">
+                <div class="col s12 l6">
+                    <img src="img/bs.png" alt="" class="responsive-img materialboxed">
+                </div>
+                <div class="col s7 l6 left-allign">
+                    <h2 class="black-text">Black Spirit</h2>
+                        <p>Adventurers maintain a relationship with a companion that is equally as important as the character.
+                            The Black Spirit is related to all secrets and adventures in Black Desert Mobile.</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- class-->
+    <section class="container scrollspy" >
+        <div class="class" id="class"> 
+            <h1>Class</h1>
+            <div class="hero">
+                    <div class="hero">
+                      <div class="col s12 l4">
+                          <img src="img/zerker.webp" alt="" class="responsive-img materialboxed">
+                      </div>
+                      <div class="col s12 l7 offset-l1">
+                        <h2 class="black-text center">Berserker</h2>
+                      </div>
+                    </div>
+                    <div class="hero">
+                        <div class="col s12 l4">
+                            <img src="img/gladiator.webp" alt="" class="responsive-img materialboxed">
+                        </div>
+                        <div class="col s12 l6 offset-l1">
+                          <h2 class="black-text center">Gladiator</h2>
+                        </div>
+                      </div>
+                    <div class="hero">
+                      <div class="col s12 l4">
+                          <img src="img/drak.webp" alt="" class="responsive-img materialboxed">
+                      </div>
+                      <div class="col s12 l6 offset-l1">
+                        <h2 class="black-text center">Drakania</h2>
+                      </div>
+                    </div>
+                    <div class="hero">
+                        <div class="col s12 l4">
+                            <img src="img/invo.jpg" alt="" class="responsive-img materialboxed">
+                        </div>
+                        <div class="col s12 l6 offset-l1">
+                          <h2 class="black-text center">Witch</h2>
+                        </div>
+                      </div>
+                      <div class="hero">
+                        <div class="col s12 l4">
+                            <img src="img/guardian.webp" alt="" class="responsive-img materialboxed">
+                        </div>
+                        <div class="col s12 l6 offset-l1">
+                          <h2 class="black-text center">Guardian</h2>
+                        </div>
+                      </div>
+                      <div class="hero">
+                        <div class="col s12 l4">
+                            <img src="img/ranger.webp" alt="" class="responsive-img materialboxed">
+                        </div>
+                        <div class="col s12 l6 offset-l1">
+                          <h2 class="black-text center">Ranger</h2>
+                        </div>
+                      </div>
+                      <div class="hero">
+                        <div class="col s12 l4">
+                            <img src="img/striker.webp" alt="" class="responsive-img materialboxed">
+                        </div>
+                        <div class="col s12 l6 offset-l1">
+                          <h2 class="black-text center">Striker</h2>
+                        </div>
+                        
+                      </div>
+                  </section>
+                
+            </div>
+        </div>
+    </section>
+    
+<!--Contact-->
+
+<!--footer-->
+<section class="container black">
+    <div class="contact" id="contact">
+        <p>Contact</p>
+        <a class="button-two black" href="#">Me</a>
+    </div>
+<footer class="contact">
+    <p>Concepcion, Frederick Jr.</p>
+    <p>Cpe-1B</p>
+    <div class="social">
+        <a href="#"i class="fab fa-facebook"></a>
+        <a href="#"i class="fab fa-instagram"></a>
+        <a href="#"i class="fab fa-youtube"></a>
+    </div>
+   
+</footer>
+ 
+</section>
+
+<footer class="page-footer grey darken-3">
+<footer class="rights">          
+    <p>&copy; Pearl Abyss</p>
+</footer>
+</footer>
+
+
+
+
+
+
+    <script src="js/jquery.js"></script>            
+    <!-- Compiled and minified JavaScript -->
+    <script src="js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.materialboxed').materialbox();
+            $('.parallax').parallax();
+            $('.tabs').tabs();
+            $('.datepicker').datepicker({
+                disableWeekends: true
+            });
+            $('.tooltipped').tooltip({
+            })
+            $('.scrollspy').Scrollspy({
+
+            })
+        })
+    
+    </script>
+
+</body>
+</html>
